@@ -32,6 +32,7 @@ header {
 .header-ul {
   display: flex;
   list-style: none;
+  font-family: "YekanBakhMedium";
 }
 
 .header-ul li {
@@ -315,6 +316,13 @@ header {
   header {
     width: 940px;
   }
+  .banner {
+    width: 900px;
+    padding: 60px 40px 120px;
+  }
+  .banner-image img {
+    width: 430px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -331,6 +339,27 @@ header {
   .header-ul li {
     margin: 0 10px;
   }
+  .banner {
+    width: auto;
+    padding: 40px 40px 85px;
+    margin: 0px 35px;
+  }
+  .banner-image img {
+    display: none;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-text {
+    margin: 5px 0;
+    font-size: 1.125rem;
+  }
+  .banner-button {
+    margin-top: 40px;
+  }
+  .go-down {
+    bottom: 38px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -343,5 +372,24 @@ header {
   }
   .hamburger-icon {
     display: block;
+  }
+  .banner {
+    margin: 0px 8px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner {
+    padding: 80px 40px;
+  }
+  .banner-text h3 {
+    font-size: 20px;
+    text-align: right;
+    padding-right: 19px;
+    line-height: 44px;
+  }
+  .banner-text p {
+    font-size: 16px;
+    line-height: 36px;
   }
 }
