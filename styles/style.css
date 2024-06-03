@@ -11,6 +11,24 @@ body {
   font-family: "iranyekanwebregular", Arial, Helvetica, sans-serif;
 }
 
+/* Scrollbar style */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: silver;
+  transition: background-color 0.3s ease-in;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c7c7c;
+}
+
+/* Header styling */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -213,6 +231,8 @@ header {
   background-color: rgba(232, 239, 254, 0.6);
 }
 
+/* Banner styling */
+
 .banner {
   width: 1050px;
   padding: 124px 60px 80px;
@@ -289,6 +309,8 @@ header {
   top: -60px;
   cursor: pointer;
 }
+
+/* Section styling */
 
 .online-payment,
 .zarin-link,
@@ -419,27 +441,81 @@ header {
   top: 80px;
 }
 
-/* Scrollbar style */
+/* Article styling */
 
-::-webkit-scrollbar {
-  width: 8px;
+.attributes {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: silver;
-  transition: background-color 0.3s ease-in;
+.definition {
+  width: 35%;
+  margin-top: 50px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #7c7c7c;
+.definition h3 {
+  font-family: "YekanBakhHeavy";
+  font-size: 2rem;
 }
 
-/* .zarinplus-image {
-  width: 577px;
-  height: 299px;
-} */
-/* Animations */
+.definition p {
+  width: 85%;
+  margin-top: 40px;
+  line-height: 40px;
+  font-family: "YekanBakhMedium";
+  font-size: 1rem;
+  text-align: justify;
+  color: #303030;
+}
+
+.first-item,
+.third-item {
+  border-left: 1px solid #e0e4e7;
+}
+
+.third-item,
+.fourth-item {
+  border-top: 1px solid #e0e4e7;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  padding: 30px;
+}
+
+.items .item img {
+  width: 60px;
+  height: 60px;
+}
+
+.items .item {
+  padding: 18px 25px 20px 0;
+}
+
+.items .item div {
+  display: flex;
+  align-items: center;
+}
+
+.items .item h4 {
+  font-family: "YekanBakhHeavy";
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.items .item p {
+  font-family: "YekanBakhMedium";
+  font-size: 1rem;
+  margin: 20px 0 20px 10px;
+  color: #303030;
+  line-height: 36px;
+}
+
+/* Making animations */
 
 @keyframes fadeInDown {
   0% {
@@ -460,6 +536,7 @@ header {
     opacity: 1;
   }
 }
+
 /* Responsive */
 
 @media (max-width: 1200px) {
@@ -490,6 +567,32 @@ header {
   }
   .zarinplus-image {
     left: 30px;
+  }
+  .attributes {
+    width: 924px;
+    padding: 0 8px;
+    flex-direction: column;
+  }
+  .definition {
+    width: 100%;
+    margin: 40px;
+  }
+  .definition p {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .first-item,
+  .second-item,
+  .third-item,
+  .fourth-item {
+    border: none;
+  }
+  .items {
+    width: 90%;
+    padding: 30px;
+  }
+  .items .item {
+    padding: 18px 0 20px 50px;
   }
 }
 
@@ -560,6 +663,15 @@ header {
     right: 66px;
     margin-bottom: 40px;
   }
+  .attributes {
+    width: auto;
+    padding: 0 35px;
+    margin-top: 70px;
+    margin-right: -45px;
+  }
+  .definition {
+    width: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -605,6 +717,24 @@ header {
   .zarinplus-image {
     display: none;
   }
+  .definition {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .definition h3 {
+    font-size: 1.6rem;
+  }
+  .items {
+    width: 100%;
+    padding: 50px 0;
+    margin: 0 30px 0 0;
+  }
+  .items .item {
+    padding: 18px 0 20px 20px;
+  }
+  /* .definition p {
+    text-align: center;
+  } */
 }
 
 @media (max-width: 575px) {
@@ -633,5 +763,12 @@ header {
   }
   .section-text h3 {
     font-size: 1.5rem;
+  }
+  .items {
+    grid-template-columns: 1fr;
+    padding: 50px 0;
+  }
+  .items .item {
+    padding: 18px 0;
   }
 }
