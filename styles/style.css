@@ -290,7 +290,11 @@ header {
   cursor: pointer;
 }
 
-.online-payment {
+.online-payment,
+.zarin-link,
+.zarin-card,
+.tashim,
+.zarin-plus {
   width: 1170px;
   margin: auto;
   display: flex;
@@ -298,8 +302,12 @@ header {
   justify-content: space-between;
 }
 
-.section-image img {
-  width: 450px;
+.online-payment {
+  margin: 17px auto;
+}
+
+.payment-image {
+  width: 460px;
   height: 480px;
 }
 
@@ -371,6 +379,66 @@ header {
   height: 15px;
   margin-right: 5px;
 }
+
+.zarinlink-image {
+  width: 680px;
+  height: 530px;
+}
+
+.zarin-card {
+  margin: 100px auto;
+}
+
+.zarincard-image {
+  width: 408px;
+  height: 266px;
+  position: relative;
+  top: 80px;
+  margin-left: 65px;
+}
+
+.tashim {
+  margin: -40px auto;
+}
+
+.tashim-image {
+  width: 596px;
+  height: 400px;
+  position: relative;
+  top: 40px;
+}
+
+.zarin-plus {
+  margin: 70px auto;
+}
+
+.zarinplus-image {
+  width: 460px;
+  height: 290px;
+  position: relative;
+  top: 80px;
+}
+
+/* Scrollbar style */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: silver;
+  transition: background-color 0.3s ease-in;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c7c7c;
+}
+
+/* .zarinplus-image {
+  width: 577px;
+  height: 299px;
+} */
 /* Animations */
 
 @keyframes fadeInDown {
@@ -405,8 +473,23 @@ header {
   .banner-image img {
     width: 430px;
   }
-  .online-payment {
+  .online-payment,
+  .zarin-link,
+  .zarin-card,
+  .tashim,
+  .zarin-plus {
     width: 940px;
+  }
+  .payment-image {
+    width: 502px;
+    height: 518px;
+  }
+  .zarinlink-image {
+    width: 500px;
+    height: 423px;
+  }
+  .zarinplus-image {
+    left: 30px;
   }
 }
 
@@ -445,13 +528,37 @@ header {
   .go-down {
     bottom: 38px;
   }
-  .online-payment {
+  .online-payment,
+  .zarin-link,
+  .zarin-card,
+  .tashim,
+  .zarin-plus {
     width: auto;
     flex-direction: column;
     align-items: center;
   }
   .section-text {
     width: 95%;
+  }
+  .payment-image {
+    width: 460px;
+    height: 480px;
+  }
+  .zarinlink-image {
+    width: 555px;
+    height: 480px;
+  }
+  .zarincard-image {
+    width: 420px;
+    height: 274px;
+    top: -7px;
+  }
+  .zarin-plus {
+    margin: -100px auto;
+  }
+  .zarinplus-image {
+    right: 66px;
+    margin-bottom: 40px;
   }
 }
 
@@ -474,9 +581,29 @@ header {
     flex-direction: column;
     align-items: center;
   }
-  .section-image img {
+  .payment-image {
     width: 460px;
     height: 540px;
+    position: relative;
+    right: 5px;
+    top: 30px;
+  }
+  .zarinlink-image {
+    width: 452px;
+    height: 423px;
+  }
+  .zarincard-image {
+    width: 417px;
+    height: 275px;
+    top: -32px;
+    right: 29px;
+  }
+  .zarin-plus {
+    margin: 50px auto;
+  }
+  .tashim-image,
+  .zarinplus-image {
+    display: none;
   }
 }
 
@@ -494,7 +621,10 @@ header {
     font-size: 16px;
     line-height: 36px;
   }
-  .section-image img {
+  .payment-image,
+  .zarinlink-image,
+  .zarincard-image,
+  .tashim-image {
     display: none;
   }
   .section-text {
