@@ -11,7 +11,7 @@ body {
   font-family: "iranyekanwebregular", Arial, Helvetica, sans-serif;
 }
 
-/* Scrollbar style */
+/* Scrollbar styling */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -515,6 +515,46 @@ header {
   line-height: 36px;
 }
 
+/* Start-box styling  */
+
+.start-box {
+  width: 1170px;
+  height: 220px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid silver;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-box h4 {
+  font-family: "YekanBakhHeavy";
+  font-size: 1.7rem;
+}
+
+.start-box p {
+  font-family: "YekanBakhMedium";
+  font-size: 1.4rem;
+  color: #747480;
+  margin-top: 8px;
+}
+
+.start-box a {
+  text-decoration: none;
+  font-family: "iranyekanwebmedium";
+  font-size: 0.9rem;
+  height: 28px;
+  line-height: 28px;
+  padding: 4px 14px;
+  background-color: #ffd900;
+  color: #000;
+  border-radius: 10px;
+  margin-top: 17px;
+}
+
 /* Making animations */
 
 @keyframes fadeInDown {
@@ -594,6 +634,9 @@ header {
   .items .item {
     padding: 18px 0 20px 50px;
   }
+  .start-box {
+    width: 940px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -672,6 +715,10 @@ header {
   .definition {
     width: auto;
   }
+  .start-box {
+    margin: 80px 38px;
+    width: calc(100% - 76px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -732,9 +779,10 @@ header {
   .items .item {
     padding: 18px 0 20px 20px;
   }
-  /* .definition p {
-    text-align: center;
-  } */
+  .start-box {
+    margin: 0 8px;
+    width: calc(100% - 16px);
+  }
 }
 
 @media (max-width: 575px) {
@@ -770,5 +818,14 @@ header {
   }
   .items .item {
     padding: 18px 0;
+  }
+  .start-box {
+    height: 180px;
+  }
+  .start-box h4 {
+    font-size: 1.2rem;
+  }
+  .start-box p {
+    font-size: 1rem;
   }
 }
