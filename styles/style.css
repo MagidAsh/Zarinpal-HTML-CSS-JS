@@ -555,6 +555,48 @@ header {
   margin-top: 17px;
 }
 
+/* Support styling */
+
+.support {
+  width: 1170px;
+  height: 70px;
+  padding: 0 30px;
+  margin: 50px auto;
+  background-color: #fbf6f1;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.support-number {
+  font-family: "YekanBakhHeavy";
+  font-size: 1.25rem;
+  color: #303030;
+}
+
+.line {
+  margin: 0 15px;
+}
+
+.phone-number {
+  color: #21457f;
+  font-size: 1.5rem;
+}
+
+.support-request {
+  font-family: "YekanBakhBold";
+  font-size: 1.375rem;
+  display: flex;
+  color: #21457f;
+  cursor: pointer;
+}
+
+.support-request img {
+  width: 20px;
+  margin-right: 10px;
+}
+
 /* Making animations */
 
 @keyframes fadeInDown {
@@ -637,6 +679,18 @@ header {
   .start-box {
     width: 940px;
   }
+  .support {
+    width: 900px;
+  }
+  .support-number {
+    font-size: 1rem;
+  }
+  .phone-number {
+    font-size: 1.2rem;
+  }
+  .support-request {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 990px) {
@@ -718,6 +772,30 @@ header {
   .start-box {
     margin: 80px 38px;
     width: calc(100% - 76px);
+  }
+  .support {
+    width: calc(100% - 120px);
+    flex-direction: column;
+    align-items: flex-start;
+    background: none;
+  }
+
+  .support-number {
+    font-size: 1.18rem;
+  }
+
+  .phone-number {
+    font-size: 1.28rem;
+  }
+
+  .support-request {
+    background-color: #fbf6f1;
+    font-size: 1.18rem;
+    padding: 0 20px;
+    margin-top: 15px;
+    border-radius: 24px;
+    height: 40px;
+    line-height: 40px;
   }
 }
 
@@ -827,5 +905,30 @@ header {
   }
   .start-box p {
     font-size: 1rem;
+  }
+  .support {
+    width: calc(100% - 120px);
+    margin: 50px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .support-number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.9rem;
+  }
+  .phone-number {
+    font-size: 0.95rem;
+  }
+  .line {
+    display: none;
+  }
+  .support-number p {
+    width: 210px;
+    padding: 10px 20px 0 0;
+  }
+  .support-request {
+    font-size: 0.92rem;
   }
 }
