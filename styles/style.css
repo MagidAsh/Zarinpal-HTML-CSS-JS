@@ -597,6 +597,84 @@ header {
   margin-right: 10px;
 }
 
+/* Footer styling */
+
+footer {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: calc(100% - 330px);
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+
+.footer-links p {
+  font-family: "YekanBakhHeavy";
+  font-size: 1.25rem;
+  margin-top: 10px;
+  color: #303030;
+}
+
+.footer-links p:hover {
+  color: #21457f;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin-top: 17px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  font-family: "iranyekanwebregular";
+  font-size: 1rem;
+  line-height: 40px;
+}
+
+.social-media {
+  width: 330px;
+  padding: 0 30px;
+  margin-bottom: 100px;
+}
+
+.social-media p {
+  font-family: "YekanBakhHeavy";
+  font-size: 1.25rem;
+  color: #303030;
+}
+
+.social-media div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-media a {
+  background-color: #eff4fe;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  transition: all 0.5s ease;
+}
+
+.social-media a:hover {
+  background-color: #fefefe;
+}
+
+.social-media p:hover {
+  color: #21457f;
+}
+
 /* Making animations */
 
 @keyframes fadeInDown {
@@ -690,6 +768,9 @@ header {
   }
   .support-request {
     font-size: 1.1rem;
+  }
+  footer {
+    width: 940px;
   }
 }
 
@@ -797,6 +878,18 @@ header {
     height: 40px;
     line-height: 40px;
   }
+  footer {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .footer-links {
+    width: 100%;
+  }
+  footer .social-media {
+    padding: 0 8px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -860,6 +953,16 @@ header {
   .start-box {
     margin: 0 8px;
     width: calc(100% - 16px);
+  }
+  footer {
+    width: calc(100% - 120px);
+    margin: 0 60px;
+  }
+  footer .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer .footer-links div {
+    margin-top: 25px;
   }
 }
 
@@ -930,5 +1033,25 @@ header {
   }
   .support-request {
     font-size: 0.92rem;
+  }
+  footer {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+  }
+  .footer-links p {
+    font-size: 1rem;
+  }
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+  .social-media {
+    width: auto;
+    margin-right: 80px;
+  }
+  .social-media p {
+    font-size: 1rem;
+    display: inline-block;
+    margin-right: 55px;
+    margin-bottom: 15px;
   }
 }
