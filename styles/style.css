@@ -675,6 +675,22 @@ footer {
   color: #21457f;
 }
 
+/* Bell styling */
+
+.bell {
+  background-color: #2e82ff;
+  width: fit-content;
+  padding: 7px 7px 0;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.bell img {
+  width: 40px;
+}
+
 /* Making animations */
 
 @keyframes fadeInDown {
